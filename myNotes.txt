@@ -1,0 +1,34 @@
+Types of CSS -
+1. Inline Styling
+2. Internal Style sheet
+3. External Style sheet
+
+Rule Set design - 
+
+selector {
+  key1: value1;       //properties
+  key2: value2;
+ }                    //declaration block
+
+
+Selectors - 
+
+1. Type selectors
+2. universal selectors
+3. class selectors 
+4. id selectors
+5. Attribute selectors
+6. pseudo-class selectors
+7. multiple selectors
+
+Specificity of selectors : type < class < id {order of overriding styles} Best practice - use least specificity. 
+
+Chaining -> Classifying elements based on both type & class simultaneously. h1.className{} etc. h1: type, className: class type.
+
+Chaining increases specificity. 
+
+Descendant Combinators -> to target descendant/child elements of a given class. eg. Parent-selector chile-selector{} or .className descendantElementName {}
+
+Descendant Combinators increases specificity.
+
+Chaining Vs DC -> Chaining will consider both. Eg. h1.className{} => This would apply the styling to those elements which are h1 AND has class="className". While, DC would just apply styling to descendants/child elements. Ege. h1 p {} -> This would apply styling to only those p elements that are child to h1 elements. 
