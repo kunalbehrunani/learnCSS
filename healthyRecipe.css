@@ -1,0 +1,48 @@
+*{
+    background-color:beige;
+    font-family: Helvetica;
+  }
+  
+  img[src]{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border: 2px;
+    border-style: inset;
+    border-color: brown;
+    font-weight: bold;
+  }
+  
+  .description{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  h1{  
+    -webkit-text-stroke: 1px black;
+     color: darkkhaki;
+     font-family:sans-serif;
+     font-size: 40px; 
+  }
+  
+  #cook-time{
+    font-style: italic;
+  }
+  
+  .ingredients li{
+    list-style: square;
+  }
+  
+  .time{
+    color: olive;
+  }
+  
+  .external-link{
+    color: dodgerblue;
+  }
+  
+  .external-link:hover{
+    color: blue;
+  }
