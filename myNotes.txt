@@ -32,3 +32,17 @@ Descendant Combinators -> to target descendant/child elements of a given class. 
 Descendant Combinators increases specificity.
 
 Chaining Vs DC -> Chaining will consider both. Eg. h1.className{} => This would apply the styling to those elements which are h1 AND has class="className". While, DC would just apply styling to descendants/child elements. Ege. h1 p {} -> This would apply styling to only those p elements that are child to h1 elements. 
+
+
+
+
+Lesson #2 - Visual Rules
+
+font-family - Use Web Safe CSS Fonts. Compatible with most browsers. Others should be downloaded to use. may react differently on diff browsers.
+font-size
+font-weight
+text-align - Alignment done with reference to parent html element
+color - Foreground color
+background-color
+opacity - Range[0,1]
+"!important" - eg. p{color:blue !important;} // override this style irrespective of specificity.
