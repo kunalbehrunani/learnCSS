@@ -14,12 +14,12 @@ selector {
 Selectors - 
 
 1. Type selectors
-2. universal selectors
-3. class selectors 
-4. id selectors
-5. Attribute selectors
-6. pseudo-class selectors
-7. multiple selectors
+2. universal selectors {*}
+3. class selectors {.} 
+4. id selectors {#}
+5. Attribute selectors {[]}
+6. pseudo-class selectors {:}
+7. multiple selectors {,}
 
 Specificity of selectors : type < class < id {order of overriding styles} Best practice - use least specificity. 
 
@@ -70,8 +70,10 @@ if(height===width) && border-radius:50% => perfect circle outline
 Padding -> space between the content & it's border.Mostly used to increase the background space for any content to be displayed inside a box.
 padding: 10px; => Padding in all directions.
 padding-top/right/bottom/left: 10px; => specific
-If(only 3 values) then right=left;
-If(only 2 values) then right=left && top=bottom.
+
+Shorthand syntax for padding: 
+  If(only 3 values) then right=left;
+  If(only 2 values) then right=left && top=bottom.
 
 Margin -> Place outside the box/border. To manage spacing/positioning with other external html elements. 
 margin: 10px;
@@ -89,3 +91,10 @@ overflow -> set on the parent's element to instruct browser on how to render chi
 
 visibility -> hidden, visible, collapse. If hidden, the void/structure/space of that html element would still persist but content would be hidden. 
 However, If {display:none;} then whole element is removed.
+
+Resetting Defaults - Sometimes, browser have default paddings/margins. This can confuse the developer, hence make everything to default - 
+//code
+*{
+  margin: 0px;
+  padding: 0px;
+ }
