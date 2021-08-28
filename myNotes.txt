@@ -80,3 +80,12 @@ margin: 0px auto; => center the elements with respect to the outer box.
 
 imp: horizontal margins & paddings between two external html elements add up. For vertical => top & bottom margins will collapse, while, top & bottom paddings don't. 
 Collapse => final-margin = max(marginA,marginB).
+
+min-height/width & max-height/width
+
+an HTML elements size = summation of size of all paramters ie. margins, paddings, content, border-thickness etc. And not just the content area.
+
+overflow -> set on the parent's element to instruct browser on how to render child elements if size overexeceeds it's parent's dimensions.
+
+visibility -> hidden, visible, collapse. If hidden, the void/structure/space of that html element would still persist but content would be hidden. 
+However, If {display:none;} then whole element is removed.
