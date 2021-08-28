@@ -46,3 +46,37 @@ color - Foreground color
 background-color
 opacity - Range[0,1]
 "!important" - eg. p{color:blue !important;} // override this style irrespective of specificity.
+
+
+Lesson #3 - The Box Model
+
+Every html element resides inside a box. 
+Paramters of that box - content area (width & height), margins, border, padding.
+
+Major keywords - width, height, padding, border, margin, overflow
+
+Overflow => 3 values ie. visible, hidden, scroll {for spill over content w.r.t the parent box dimensions}
+
+Content area - height & width;
+
+border - syntax: border: size style color;
+  default: medium none color {color of the element}
+  size - in pixels, or keywords - thin, medium, thick
+  style - solid, dotted, none etc.
+  color - as usual.
+border-radius: size;
+if(height===width) && border-radius:50% => perfect circle outline
+
+Padding -> space between the content & it's border.Mostly used to increase the background space for any content to be displayed inside a box.
+padding: 10px; => Padding in all directions.
+padding-top/right/bottom/left: 10px; => specific
+If(only 3 values) then right=left;
+If(only 2 values) then right=left && top=bottom.
+
+Margin -> Place outside the box/border. To manage spacing/positioning with other external html elements. 
+margin: 10px;
+margin-top/right/bottom/left. Also shorthand works here to like padding. 
+margin: 0px auto; => center the elements with respect to the outer box. 
+
+imp: horizontal margins & paddings between two external html elements add up. For vertical => top & bottom margins will collapse, while, top & bottom paddings don't. 
+Collapse => final-margin = max(marginA,marginB).
