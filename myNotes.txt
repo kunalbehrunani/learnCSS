@@ -85,7 +85,7 @@ Collapse => final-margin = max(marginA,marginB).
 
 min-height/width & max-height/width
 
-an HTML elements size = summation of size of all paramters ie. margins, paddings, content, border-thickness etc. And not just the content area.
+an HTML elements size = summation of size of all paramters except the margins ie. paddings, content, border-thickness etc. And not just the content area.
 
 overflow -> set on the parent's element to instruct browser on how to render child elements if size overexeceeds it's parent's dimensions.
 
@@ -97,4 +97,5 @@ Resetting Defaults - Sometimes, browser have default paddings/margins. This can 
 *{
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box; //This is the best practice. With this - The height & width that we enter will not be specifically of content area, instead will incoperate the whole box size. 
  }
