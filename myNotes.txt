@@ -99,3 +99,19 @@ Resetting Defaults - Sometimes, browser have default paddings/margins. This can 
   padding: 0px;
   box-sizing: border-box; //This is the best practice. With this - The height & width that we enter will not be specifically of content area, instead will incoperate the whole box size. 
  }
+
+
+
+Lesson #4 - Display & Positioning
+
+position keywords -> static, relative, fixed, absolute, sticky
+offset keywords -> top, right, bottom, left {They have away nature, which means if top:20px => the element will be offsetted by 20px away from left}
+
+KIMs: {Keep in mind points ;)}
+1. Static & relative keep the element in the document flow. Hence when we scroll through the document flow, it'll also scroll. 
+2. absolute & fixed positioning remove the element from document flow and then paste it at the desired position. Absolute though still scrolls with the document flow however fixed doesn't.
+3. Static & relative would leave gap from where it's positioned. Means if it's relative to top: 100px => it'll move down 100px would leave it's void where it's static position was held and no other element {unless manually positioned} would take up it's place.
+4. Fixed & Absolute don't leave gap/void in place of it's static orignal position. 
+5. Fixed positioning is always with reference to the view port. 
+6. Absolute positioning is always with reference to the last/nearest positioned ancestor in the html tree model {parent-child relationship}. If none found, it'll be positioned with reference to the view port/document window object.
+7. Sticky positioning - Behaviour changes with scrolling. Unless crossed or it's orignal position is held in the view port, it'll stay intact. When scrolled over, it'll become fixed. Scrolling behavior goes contrary with the offset applied. Eg. If top: 20px, then when scrolling bottom, it'll get fixed at 20px with reference to view port. eg. if bottom: 20px, then => when scrolling up => offset will be 20px from bottom of view port (in the away direction.) 
