@@ -115,3 +115,11 @@ KIMs: {Keep in mind points ;)}
 5. Fixed positioning is always with reference to the view port. 
 6. Absolute positioning is always with reference to the last/nearest positioned ancestor in the html tree model {parent-child relationship}. If none found, it'll be positioned with reference to the view port/document window object.
 7. Sticky positioning - Behaviour changes with scrolling. Unless crossed or it's orignal position is held in the view port, it'll stay intact. When scrolled over, it'll become fixed. Scrolling behavior goes contrary with the offset applied. Eg. If top: 20px, then when scrolling bottom, it'll get fixed at 20px with reference to view port. eg. if bottom: 20px, then => when scrolling up => offset will be 20px from bottom of view port (in the away direction.) 
+
+z-index: accepts integer values. Decides who overlaps the other in case of positioning overlapping.
+
+Display: 
+1. inline: don't require new line, occupy space only enough to fit content, dimensions of content area cannot be altered, displays every content in same line from left to right order as in the html document file.
+2. block: require new line, by default occupy full width of parent element and height enough to occupy content, dimensions can be altered via box model paramters, displays every new block in new line, in top to bottom order as in the html document file.
+3. inline-block: like inline, but blocks. advantage => dimensions can be altered using height & width attributes.
+
