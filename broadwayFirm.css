@@ -1,0 +1,106 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    width: 100%;
+    margin: 0px auto;
+    padding: 2%;
+    background-color: black;
+    color: white;
+}
+
+nav ul{
+    width: 50%;
+    margin: 0px auto;
+}
+
+nav ul li{
+    width: 20%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+main{
+    background-color: white;
+}
+
+div{
+    background-color: white;
+}
+
+.introduction{
+    position: relative;
+    width: 100%;
+}
+
+.introduction h1{
+    position: absolute;
+    top: 7%;
+    text-align: center;
+    width: 100%;
+    font-size: 300%;
+    box-sizing: border-box;
+    opacity: 0.5;
+}
+
+.introduction input{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 1%;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    width: 20%;
+    left: 40%;
+}
+
+.introduction input:hover{
+    opacity: 1;
+}
+
+.activities{
+    text-align: center;
+    margin: 3%;
+}
+.activities img{
+    padding: 1%;
+    margin: 0% auto;
+    text-align: center;
+}
+.activities h3{
+    padding: 1%;
+    margin: 1% auto;
+    text-align: center;
+}
+.activities p{
+    padding: 1%;
+    font-size: 100%;
+    margin: 1% auto;
+    text-align: center;
+}
+.activities input{
+    padding: 2%;
+    margin: 1% auto;
+    text-align: center;
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+}
+.activities input:hover{
+    font-weight: bold;
+    font-size:90%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10%;
+}
+
