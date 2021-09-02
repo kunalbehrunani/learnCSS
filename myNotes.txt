@@ -139,4 +139,21 @@ Lesson #5 : Coloring
 3. color: transparent => another keyword to make color transparent.
 
 4. HSLA is useful when we are trying to set the color combinations on our website. As we can set the Saturation & Lightness same and diff the colors. Also, vice versa. When we want to set color in contrasts.
+
+
+
+
+Lesson #6 Typeface & TypoGraphy
+
+1. Best practice - use quotation marks for font names that have spaces/multiwords.
+2. Web Safe Fonts
+3. Font stack 
+4. Sarif (higher details at the end of each letter) Vs Sans-serif (lesser details)
+5. font-weight: lighter/bolder (w.r.t to parent element's font size)
+6. text-transform: uppercase/lowercase
+7. letter-spacing/word-spacing: 1.2px/0.5em etc. But can't use relative values eg. 10%, 1.2 etc wouldn't work. 
+8. line-height: 1.2px/0.4em/1.2/10% etc.
+9. text-align: align text w.r.t parent element container.
+10. Use https://fonts.google.com to use external fonts, select some of them and google will automatically generate the link tag to be clubbed in html's head tag.
+11. @font-face : to be used to use downloaded font files.
   
