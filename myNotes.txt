@@ -123,3 +123,20 @@ Display:
 2. block: require new line, by default occupy full width of parent element and height enough to occupy content, dimensions can be altered via box model paramters, displays every new block in new line, in top to bottom order as in the html document file.
 3. inline-block: like inline, but blocks. advantage => dimensions can be altered using height & width attributes.
 
+
+
+Lesson #5 : Coloring
+
+1. RGBA : Red, blue, green, alpha (opacity)
+  syntax(r,g,b,a): r,g,b => [0,255] | a => {0,1}
+  syntax #00FFAA: total 6 => each 2 represent r,g,b respectively in hexa decimal system. Can be shortened to 3 if sets of 2 are equal. Always starts with #.
+  
+2. HSLA : Hue, saturation, lightness, alpha 
+  Hue - color pallete of 360 degree. Selects the color. value => [0,360]
+  Saturation: Decides intensity of color, richness. range => [0%,100%]. 0=> greyer, 100=> richest form of that color.
+  Lightness: range : 0%,100%, 0=> black. 100=> white. 
+  
+3. color: transparent => another keyword to make color transparent.
+
+4. HSLA is useful when we are trying to set the color combinations on our website. As we can set the Saturation & Lightness same and diff the colors. Also, vice versa. When we want to set color in contrasts.
+  
